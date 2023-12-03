@@ -1,7 +1,97 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Symfony Vue Boilerplate{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
+{% endblock %}
+
 
 {% block body %}
+
+    <h1>Symfony Vue Boilerplate</h1>
+
+    <section>
+        <h2>Used Technologies</h2>
+        <ul>
+            <li><strong>Symfony</strong>: A powerful PHP framework for server-side development.</li>
+            <li><strong>Vue.js</strong>: A progressive JavaScript library for building interactive user interfaces.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Features</h2>
+        <ul>
+            <li>Ready-to-use project structure with Symfony and Vue.js.</li>
+            <li>Backend-frontend communication via RESTful APIs.</li>
+            <li>Webpack configuration for frontend dependency management.</li>
+            <li>Pre-configured with commonly used tools for modern development.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Use</h2>
+        <ol>
+            <li>Clone the repository:
+                <pre><code>git clone https://github.com/crownbackend/symfony-vue-boilerplate.git</code></pre>
+            </li>
+            <li>Install Symfony dependencies:
+                <pre><code>cd symfony-vue-boilerplate/backend
+composer install</code></pre>
+            </li>
+            <li>Install Vue.js dependencies:
+                <pre><code>cd symfony-vue-boilerplate/back-office
+npm install</code></pre>
+            </li>
+            <li>Launch the application:
+                <pre><code># From the backend
+symfony serve
+
+# From the back-office
+npm run serve</code></pre>
+            </li>
+        </ol>
+        The application will be accessible at <a href="http://localhost:8000" target="_blank">http://localhost:8000</a> for the backend and <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> for the back-office.
+    </section>
+
+    <section>
+        <h2>Contribute</h2>
+        If you want to contribute to this project, feel free to open issues or propose pull requests on <a href="https://github.com/crownbackend/symfony-vue-boilerplate" target="_blank">GitHub</a>.
+    </section>
+
+    <hr>
+
+    <p><strong>[Access the GitHub Repository](https://github.com/crownbackend/symfony-vue-boilerplate)</strong></p>
+
 
 {% endblock %}
