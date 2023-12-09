@@ -6,6 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Types\UuidType;
 use Symfony\Component\Uid\Uuid;
 
+// Extend this class to have basic fields, id, createdAt..
 #[ORM\MappedSuperclass]
 class BaseEntity
 {
